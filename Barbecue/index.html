@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Churrasco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MAPA - PROGRAMAÇÃO FRONT END - 52_2024</h1>
+        <h2>Calculadora de Churrasco</h2>
+        <img src="G:\My Drive\dev.projects\Facul\Front_End\Barbecue\imagens\barbie.jpeg" alt="background_image" style="width:40%; max-width:600px;">
+        <br>
+        <form id="formulario-churrasco">
+            <div class="campo">
+                <label for="numero-homens">Homens:</label>
+                <input type="number" id="numero-homens" name="numero-homens" min="0" value="0">
+            </div>
+            <div class="campo">
+                <label for="numero-mulheres">Mulheres:</label>
+                <input type="number" id="numero-mulheres" name="numero-mulheres" min="0" value="0">   
+            </div>
+            <div class="campo">
+                <label for="numero-criancas">Crianças:</label>
+                <input type="number" id="numero-criancas" name="numero-criancas" min="0" value="0">
+            </div>
+            <button type="button" id="botao-calcular" onclick="calcular()">Calcular</button>
+        </form>
+        <div id="resultado-churrasco">
+            <h2>Quantidade de itens a serem comprados:</h2>
+            <ul id="lista-itens">
+                <li id="carne">0 Kilos de Carne Bovina</li>
+                <li id="frango">0 Kilos de Frango</li>
+                <li id="linguica">0 Kilos de Linguiça</li>
+                <li id="refrigerante">0 Litros de Refrigerante</li>
+                <li id="cerveja">0 Litros de Cerveja</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
